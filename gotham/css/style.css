@@ -1,0 +1,371 @@
+@font-face {
+    src: url('../fonts/Proxima_Nova/ProximaNova-Reg.otf');
+    font-family: 'ProximaNova';
+}
+@font-face {
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-family: 'Roboto';
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 7%;
+    padding-right: 7%; 
+}
+
+.header  { 
+    background-color: #f7c61d;
+}
+
+.header nav {
+    display: flex;
+    height: 67px;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'ProximaNova';
+}
+.header a {
+    text-transform: uppercase;
+    
+    font-size: 16px;
+    color:#000000;
+    transition: color .5s;
+}
+.header a:hover {
+    color:#FFFFFF;
+}
+
+.main {
+    display: flex;
+}
+
+.articles {
+    flex: 2 0 72%;
+    min-height: 100vh;
+    border-right: 1px solid #e7e7e7;
+}
+
+.aside {
+    flex: 1 0 18%;
+}
+
+.middle-h {
+    margin-top: 40px;
+    margin-bottom:20px;
+    font-family: 'ProximaNova';
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.article-wrap {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.old {
+    display: none;
+}
+
+.article-img {
+    width: 30%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.article-img img {
+    width: 100%;
+    height: 100%;
+    transition: transform .5s ease-in;
+}
+
+.article-img img:hover {
+    transform: scale(1.3);
+}
+
+.article-content {
+    width: 70%;
+}
+
+.article-content h3 {
+    font-family: "ProximaNova", sans-serif;
+    font-size: 3rem;
+    color: rgb(51, 51, 51);
+    font-weight: 300;
+    transition: color .3s;
+}
+
+.article-meta span:nth-child(-n+2):after {
+    content: ' | ';
+}
+
+.article-meta, .article-meta a {
+    margin: 20px 0;
+    font-size: 1.6rem;
+    color: #999999;
+    transition: color .3s;
+}
+
+.article-category a, .article-author:hover, .article-content h3:hover {
+    color: #f7c61d;
+}
+
+.article-content {
+    padding: 0 30px;
+}
+
+.article-content p{
+    padding-bottom: 15px;
+    font-family: "ProximaNova", sans-serif;
+    font-size: 1.6rem;
+    font-weight:300;
+    line-height: 22px;
+    color: #555555;
+}
+
+.article-content p>a:after {
+    content: '>';
+    color: #f7c61d;
+    font-weight: 700;
+}
+
+.article-comment, .article-view {
+    font-size: 1.3rem;
+    padding-right: 10px;
+    color: #999999;
+    padding-top: 15px;
+}
+
+.article-comment {
+    padding-left: 7px;
+}
+.article-comment a{
+    color:#f7c61d;
+}
+
+.article-r {
+    color: #999999;
+}    
+
+.article-comment i, .article-view i {
+    padding: 0 3px;
+}
+
+.btn-c {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.btn-yellow {
+    padding: 15px 30px;
+    border: 2px solid #f7c61d;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    background-color: #FFF;
+    transition: color .3s, background-color .3s;
+}
+
+.btn-yellow:hover {
+    background-color: #f7c61d;
+    color: #FFF;
+}
+
+
+.poisk {
+    
+    position: relative;
+    padding-top:78px;
+    padding-bottom:40px;
+    width: 241px;
+}
+
+.poisk input {
+    border: 1px solid #e5e5e5;
+    transition: border .3s;
+}
+
+.poisk input:hover {
+    border: 1px solid #cecece;
+}
+
+.poisk input:focus {
+    border: 1px solid #f5e9c0;
+    color:#828282;
+}
+
+.poisk .input {
+    width: 100%;
+    padding: 9px 9px 9px 34px;
+    border-radius: 20px;
+    font: 1.4rem Roboto, sans-serif;
+    color: #999999;
+}
+
+.button {
+    position: absolute;
+    left:14px;
+    top:91px;
+    
+}
+.button i{
+    font-size:14px;
+    color: #111111;
+    transition: color .3s;
+}
+.button i:hover {
+    color:#f7c61d;
+    
+}
+
+#calendar {
+  width: 100%;
+  font: monospace;
+  font:1.6rem Roboto, sans-serif;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  transition: border .3s;
+}
+
+.head {
+    height:40px;
+    line-height:40px;
+}
+
+.head2 {
+    height:28px;
+    line-height:28px;
+}
+
+#calendar:hover {
+    border: 1px solid #cecece;
+}
+
+#calendar thead tr:last-child {
+  font-size: 1.3rem;
+  color: #8e8e8e;
+  background-color:#e7e7e7;
+  border: 1px solid #e5e5e5;
+}
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+  color:#202020;
+}
+#calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+  color:#f7c61d;
+}
+#calendar tbody td {
+  font-size: 1.3rem;  
+  color: #4d4d4d;
+  border: 1px solid #e5e5e5;
+}
+#calendar tbody td:nth-child(n+6), #calendar .holiday {
+  color: #4d4d4d;
+}
+#calendar tbody td.today {
+  background: #f7c61d;
+  color: #fff;
+}
+#calendar tbody td.today:hover{
+    cursor: pointer;
+    background: #FFF;
+    color:#bcbcbc;
+}
+
+.aside-h {
+    margin-top: 45px;
+    margin-bottom: 23px;
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.aside-h:after {
+    display: inline-block;
+    content: '';
+    margin-left:10px;
+    margin-bottom:5px;
+    width: 48%;
+    border: 1px #e5e5e5 solid;  
+}
+
+.data {
+    margin-bottom:10px;
+    font-family: ProximaNova, sans-serif;
+    font-size: 1.2rem;
+    color:#999999;
+}
+
+.news {
+    margin-bottom:30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.news a {
+    color:#111111;
+    transition: color .3s;
+}
+
+.news a:hover {
+    color:#f7c61d;
+}
+
+.footer {
+    display: flex;
+    height: 67px;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#f8cc33;
+}
+
+.c {
+    font-family: ProximaNova, sans-serif;
+    font-size: 1.3rem;
+    color: #a78613;
+}
+.footer-nav {
+    font-family: Roboto, sans-serif;
+    font-size:1.4rem;
+    text-transform: capitalize;
+}
+
+.footer-nav a{
+    margin-right:35px;
+    color: #000000;
+    transition: color .3s;
+}
+
+.footer-nav a:hover {
+    color: #FFFFFF;
+}
+
+.soc {
+    font-size:1.5rem;
+    
+}
+
+.soc i{
+    margin-right:7px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    line-height:44px;
+    border-radius:50%;
+    border:1px solid #FFFFFF;
+    background-color:#FFFFFF;
+    color:#f8cc33;
+    transition: color .3s, background-color .3s;
+}
+
+.soc i:hover {
+    color:#FFFFFF;
+    background-color:#f8cc33;
+}

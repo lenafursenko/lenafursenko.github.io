@@ -1,0 +1,45 @@
+.header {
+	display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    height: 100px;
+    background: #f6f9f9;
+ }
+
+ .banner {
+	position: relative;
+	min-height: 90vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../img/banner.jpg);
+}
+
+main {
+	
+	padding-top: 5vh;
+	background: #f6f9f9;
+}
+
+
+
+.bottom-form {
+	position: relative;
+	height: 80vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../img/bott.jpg) ;
+}
+
+.footer {
+    min-height: 90px;
+    width: 80%;
+    margin: 0 auto;
+    background: #f6f9f9;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

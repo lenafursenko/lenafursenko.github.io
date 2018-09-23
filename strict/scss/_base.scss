@@ -1,0 +1,33 @@
+@import 'layout';
+@import 'modules';
+@import 'state';
+@font-face {
+	src: url('../fonts/Lato/LatoBold/LatoBold.woff');
+	font-family: 'LatoBold';
+}
+@font-face {
+	src: url('../fonts/Lato/LatoRegular/LatoRegular.woff');
+	font-family: 'LatoRegular';
+}
+
+html {
+	font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container {
+	padding-left: 10%;
+	padding-right: 10%;
+}
